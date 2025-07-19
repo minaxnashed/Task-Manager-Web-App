@@ -1,26 +1,26 @@
-# Task Manager Web App
+# 📝 Task Manager Web App
 
 A simple full-stack web app for managing tasks. Built with React (frontend) and ASP.NET Core (backend).
 
-## Features
+## ✨ Features
 
-- View tasks
-- Add new tasks
-- Toggle task completion
-- Delete tasks
+- ✅ View tasks  
+- ➕ Add new tasks  
+- 🔁 Toggle task completion  
+- ❌ Delete tasks 
 
-## Getting Started
+## 🚀 Getting Started
 
-### Prerequisites
+### 📦 Prerequisites
 
-- [Git](https://git-scm.com/) – for cloning the repository
-- [Node.js](https://nodejs.org/) – for running the frontend
-- [.NET 8 SDK](https://dotnet.microsoft.com/download) – for building and running the backend
+- 🧰 [Git](https://git-scm.com/) – for cloning the repository  
+- 🟢 [Node.js](https://nodejs.org/) – for running the frontend  
+- 🧱 [.NET 8 SDK](https://dotnet.microsoft.com/download) – for building and running the backend  
 
 
 ---
 
-### Clone the Repository
+### 🧬 Clone the Repository
 
 ```bash
 git clone https://github.com/minaxnashed/task-manager-web-app.git
@@ -31,7 +31,7 @@ cd task-manager-web-app
 
 ## Backend Setup (ASP.NET Core)
 
-1. Follow the the follwoing repositores README in order to settup the back-end
+1. 📘 Follow the the follwoing repositores README in order to settup the back-end
 
    https://github.com/minaxnashed/Task-Manager-API?tab=readme-ov-file#-getting-started
 
@@ -39,19 +39,19 @@ cd task-manager-web-app
 
 ## Frontend Setup (React)
 
-1. Navigate to the frontend folder (e.g. `task-manager-web-app`):
+1. 📂 Navigate to the frontend folder (e.g. `task-manager-web-app`):
 
     ```bash
     cd task-manager-web-app
     ```
 
-2. Install dependencies:
+2. 📦 Install dependencies:
 
     ```bash
     npm install
     ```
 
-3. Start the React app:
+3. ▶️ Start the React app:
 
     ```bash
     npm start
@@ -61,18 +61,18 @@ cd task-manager-web-app
 
 ---
 
-## Usage
+## 🧪 Usage
 
 - Open [http://localhost:3000](http://localhost:3000) in your browser.
-- Add, toggle, and delete tasks.
+- Add ➕, toggle 🔁, and delete ❌ tasks.
 
 ---
 
-## Notes
+## 📝 Notes
 
 - Make sure both frontend and backend are running.
 - The backend uses SQLite by default (`tasks.db` will be created automatically).
-- CORS is enabled for development.
+- 🔓 CORS is enabled for development.
 
 ---
 
