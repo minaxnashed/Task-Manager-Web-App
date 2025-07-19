@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# Task Manager Web App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A simple full-stack web app for managing tasks. Built with React (frontend) and ASP.NET Core (backend).
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- View tasks
+- Add new tasks
+- Toggle task completion
+- Delete tasks
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [Node.js](https://nodejs.org/) (for frontend)
+- [.NET 8 SDK](https://dotnet.microsoft.com/download) (for backend)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Clone the Repository
 
-### `npm run build`
+```bash
+git clone https://github.com/your-username/task-manager-web-app.git
+cd task-manager-web-app
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Backend Setup (ASP.NET Core)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Navigate to the backend folder (if separated, e.g. `TaskManagerAPI`):
 
-### `npm run eject`
+    ```bash
+    cd TaskManagerAPI
+    ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Restore dependencies and run:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+    ```bash
+    dotnet restore
+    dotnet run
+    ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   The backend will start on `http://localhost:5000`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+## Frontend Setup (React)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Navigate to the frontend folder (e.g. `task-manager-web-app`):
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    ```bash
+    cd task-manager-web-app
+    ```
 
-### Code Splitting
+2. Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+    ```bash
+    npm install
+    ```
 
-### Analyzing the Bundle Size
+3. Start the React app:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    ```bash
+    npm start
+    ```
 
-### Making a Progressive Web App
+   The frontend will start on `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+- Open [http://localhost:3000](http://localhost:3000) in your browser.
+- Add, toggle, and delete tasks.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Notes
 
-### `npm run build` fails to minify
+- Make sure both frontend and backend are running.
+- The backend uses SQLite by default (`tasks.db` will be created automatically).
+- CORS is enabled for development.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+##
