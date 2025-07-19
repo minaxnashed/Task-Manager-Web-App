@@ -1,7 +1,11 @@
+// Form for adding a new task
 import React, { useState } from 'react';
 
 function AddTaskForm({ onAdd }) {
+  // State for input value
   const [value, setValue] = useState('');
+
+  // Handle form submission
   const handleSubmit = e => {
     e.preventDefault();
     if (value.trim()) {
@@ -9,6 +13,8 @@ function AddTaskForm({ onAdd }) {
       setValue('');
     }
   };
+
+  // Render the input and button
   return (
     <form onSubmit={handleSubmit} style={{ marginBottom: '16px' }}>
       <input

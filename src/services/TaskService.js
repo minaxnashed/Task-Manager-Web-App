@@ -1,5 +1,7 @@
+// Service functions for backend API calls
 const API_URL = 'http://localhost:5000/tasks';
 
+// Fetch all tasks from backend
 export async function fetchTasks() {
   const response = await fetch(API_URL);
   if (!response.ok) throw new Error('Failed to fetch tasks');
@@ -7,10 +9,11 @@ export async function fetchTasks() {
   return data.map(task => ({
     id: task.id,
     name: task.title,
-    isCompleted: task.isCompleted // <-- map isCompleted to completed
+    isCompleted: task.isCompleted
   }));
 }
 
+// Add a new task to backend
 export async function addTask(name) {
   const response = await fetch(API_URL, {
     method: 'POST',
@@ -22,6 +25,7 @@ export async function addTask(name) {
   return { id: created.id, name: created.title, isCompleted: false };
 }
 
+// Delete a task from backend
 export async function deleteTask(id) {
   const response = await fetch(`${API_URL}/${id}`, {
     method: 'DELETE'
@@ -30,8 +34,9 @@ export async function deleteTask(id) {
   return true;
 }
 
+// Toggle completion status of a task in backend
 export async function toggleTask(id) {
-  const response = await fetch(`http://localhost:5000/tasks/${id}/toggle`, {
+  const response = await fetch(`${API_URL}/${id}/toggle`, {
     method: 'PUT'
   });
   if (!response.ok) throw new Error('Failed to toggle task');

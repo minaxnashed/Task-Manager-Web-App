@@ -1,3 +1,4 @@
+// Renders a single task with checkbox and delete button
 import React from 'react';
 
 function TaskItem({ task, onToggle, onDelete }) {
@@ -7,14 +8,17 @@ function TaskItem({ task, onToggle, onDelete }) {
       style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}
     >
       <div style={{ display: 'flex', alignItems: 'center', flex: 1 }}>
+        {/* Checkbox for completion */}
         <input
           type="checkbox"
           checked={task.isCompleted}
           onChange={() => onToggle(task.id)}
           className="task-checkbox"
         />
+        {/* Task name */}
         <span className="task-name">{task.name}</span>
       </div>
+      {/* Delete button */}
       <button
         onClick={e => { e.stopPropagation(); onDelete(task.id); }}
         style={{
