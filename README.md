@@ -13,15 +13,17 @@ A simple full-stack web app for managing tasks. Built with React (frontend) and 
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (for frontend)
-- [.NET 8 SDK](https://dotnet.microsoft.com/download) (for backend)
+- [Git](https://git-scm.com/) – for cloning the repository
+- [Node.js](https://nodejs.org/) – for running the frontend
+- [.NET 8 SDK](https://dotnet.microsoft.com/download) – for building and running the backend
+
 
 ---
 
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/task-manager-web-app.git
+git clone https://github.com/minaxnashed/task-manager-web-app.git
 cd task-manager-web-app
 ```
 
