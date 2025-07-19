@@ -1,5 +1,5 @@
 // Service functions for backend API calls
-const API_URL = 'http://localhost:5000/tasks';
+const API_URL = 'http://localhost:5010/tasks';
 
 // Fetch all tasks from backend
 export async function fetchTasks() {
