@@ -29,20 +29,9 @@ cd task-manager-web-app
 
 ## Backend Setup (ASP.NET Core)
 
-1. Navigate to the backend folder (if separated, e.g. `TaskManagerAPI`):
+1. Follow the the follwoing repositores README in order to settup the back-end
 
-    ```bash
-    cd TaskManagerAPI
-    ```
-
-2. Restore dependencies and run:
-
-    ```bash
-    dotnet restore
-    dotnet run
-    ```
-
-   The backend will start on `http://localhost:5000`.
+   https://github.com/minaxnashed/Task-Manager-API?tab=readme-ov-file#-getting-started
 
 ---
 
